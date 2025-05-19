@@ -1,0 +1,55 @@
+
+RESTORAN YÖNETİM UYGULAMASI - KULLANIM DOKÜMANTASYONU
+
+1. UYGULAMA HAKKINDA
+----------------------
+Bu Windows Forms uygulaması, küçük ve orta ölçekli restoranların ürün yönetimi ve sipariş takibini kolayca yapabilmesi amacıyla geliştirilmiştir. Kullanıcılar ürünleri görebilir, müşteri bilgileri ile sipariş oluşturabilir ve mevcut siparişleri görüntüleyip iptal edebilir.
+
+2. VERİTABANI BİLGİSİ
+----------------------
+- Sunucu: MONSTER\SQLEXPRESS
+- Veritabanı: Restoran
+
+Kullanılan temel tablolar:
+- `Urunler`: Ürün bilgilerini içerir (UrunID, UrunAdi, Fiyat, Stok, ResimLink).
+- `Siparisler`: Müşteri sipariş kayıtlarını içerir (Id, AdSoyad, Telefon, Adres, Urun, Fiyat).
+
+3. FORM VE EKRANLAR
+----------------------
+
+3.1. urunlerEkrani.cs
+- Uygulama açıldığında `urunlerEkrani` yüklenir.
+- Veritabanından tüm ürün bilgileri çekilir.
+- Ürünler, resimleriyle birlikte dinamik olarak `FlowLayoutPanel` içerisine yerleştirilir.
+- Her ürünün altında "Sipariş Ver" butonu vardır.
+
+3.2. MusteriBilgileri.cs
+- Bir ürün için "Sipariş Ver" butonuna tıklandığında açılır.
+- Kullanıcıdan ad-soyad, telefon ve adres bilgisi istenir.
+- Sipariş bilgileri kullanıcıya özetlenir ve onay istenir.
+- Sipariş onaylanırsa `Siparisler` tablosuna kayıt yapılır.
+
+3.3. Siparishler.cs
+- Mevcut siparişleri tablo halinde gösterir.
+- Kullanıcı seçili satırdan bir siparişi seçerek "Sipariş İptal Et" butonuyla silebilir.
+
+4. UYGULAMA AKIŞI
+----------------------
+1. Uygulama başlatılır, `urunlerEkrani` yüklenir.
+2. Kullanıcı ürün listesinde bir ürünü seçip "Sipariş Ver"e tıklar.
+3. Müşteri bilgileri girilir ve onay verilir.
+4. Sipariş veritabanına kaydedilir.
+5. `Siparishler` ekranında sipariş görüntülenebilir ve istenirse silinebilir.
+
+5. GÜVENLİK VE HATA YÖNETİMİ
+------------------------------
+- Veritabanı işlemleri `try-catch` blokları ile korunmuştur.
+- Hatalı bağlantı, boş girişler veya veri tipi hataları kullanıcıya bildirilir.
+- Kullanıcı onayı alınmadan sipariş eklenmez veya silinmez.
+
+6. GÖRSEL ÖZELLİKLER
+----------------------
+- Ürün resimleri internetten çekilerek `PictureBox`'ta gösterilir.
+- Kullanıcı arayüzü sade ve kullanıcı dostudur.
+
+Bu dokümantasyon, uygulamanın temel işleyişini ve kullanıcı etkileşimlerini özetler. Geliştirmeye açık alanlar için yorum satırları kullanılabilir.

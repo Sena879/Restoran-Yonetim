@@ -1,0 +1,13 @@
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\bin\Debug\RestoranYonetim.exe.config
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\bin\Debug\RestoranYonetim.exe
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\bin\Debug\RestoranYonetim.pdb
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\obj\Debug\RestoranYonetim.csproj.AssemblyReference.cache
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\obj\Debug\RestoranYonetim.Form1.resources
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\obj\Debug\RestoranYonetim.Properties.Resources.resources
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\obj\Debug\RestoranYonetim.csproj.GenerateResource.cache
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\obj\Debug\RestoranYonetim.csproj.CoreCompileInputs.cache
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\obj\Debug\RestoranYonetim.exe
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\obj\Debug\RestoranYonetim.pdb
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\obj\Debug\RestoranYonetim.urunlerEkrani.resources
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\obj\Debug\RestoranYonetim.MusteriBilgileri.resources
+C:\Users\umuty\source\repos\RestoranYonetim\RestoranYonetim\obj\Debug\RestoranYonetim.Siparishler.resources
